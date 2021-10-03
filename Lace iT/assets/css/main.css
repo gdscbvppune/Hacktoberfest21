@@ -17,6 +17,9 @@ nav{
     padding: 0% 2%;
     height: 10%;
     /* border: 1px solid #DCDBDB; */
+    position: fixed;
+    width: 100%;
+
     filter: drop-shadow(0px -24px 31px #00000034);
     
 
