@@ -14,7 +14,6 @@ body {
 nav {
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0% 2%;
@@ -25,7 +24,6 @@ nav {
 
 ul {
     display: flex;
-    flex-direction: row;
     /* background-color: aquamarine; */
     width: 25%;
 }
@@ -95,7 +93,6 @@ button:hover {
 
 .section1 {
     display: flex;
-    flex-direction: row;
     height: calc(100vh - 70px);
 }
 
@@ -121,14 +118,12 @@ button:hover {
 
 .section2 {
     display: flex;
-    flex-direction: row;
     height: 100vh;
     width: 100%;
 }
 
 .section2 {
     display: flex;
-    flex-direction: row;
     height: 100vh;
     width: 100%;
 }
