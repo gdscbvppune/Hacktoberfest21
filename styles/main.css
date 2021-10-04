@@ -55,14 +55,34 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 300;
-    color: #aaa;
+    color: #999;
 }
 
 p {
     font-size: 1rem;
     margin-top: 30px;
-    color: #999;
+    color: #666;
     width: 80%;
+}
+
+button {
+    width: 150px;
+    background-color: #F44040;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px 1px #888888;
+}
+
+button:hover {
+    background-color: #ff5959;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    margin-top: 40px;
+    width: 100%;
 }
 
 .navtitle {
