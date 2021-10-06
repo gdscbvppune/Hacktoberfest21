@@ -16,7 +16,7 @@ Fixes # (issue no.)
 
 # Explain the Testing instructions
 
-*Test Configuration*:
+**Test Configuration**:
 * Operating system:
 * Version:
 * Text-editors used:
