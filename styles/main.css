@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,9 +24,12 @@ nav {
 .navtitle {
   font-size: 2rem;
   font-weight: bolder;
-  color: #fff;
+  color: #eeeeee;
   outline: none;
+  animation-name: glow;
+  animation: glow 2s linear infinite;
 }
+
 .nav-options {
   padding: 15px 15px;
   border: 0;
@@ -37,7 +41,6 @@ nav {
   color: #fff;
   font-weight: 900;
 }
-
 ul {
   display: flex;
   flex-direction: row;
@@ -50,23 +53,31 @@ a {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 6rem;
+.heading {
+  /*change1*/
+  font-size: 5rem;
   font-weight: 300;
+  color: #444;
+  font-weight: 700;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 300;
+.sub-heading {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: bolder;
+  padding: 5% 0 0 0;
 }
 
-p {
+.font-size {
+  font-size: 1.5rem;
+}
+.content {
   font-size: 1rem;
   margin-top: 30px;
-
+  color: #666;
   width: 80%;
+  padding: 0 100px 0 0;
 }
-
 /* created a button with animations */
 .btn:link,
 .btn:visited {
@@ -115,13 +126,6 @@ p {
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
-}
-
-.navtitle {
-  /* background-color: azure; */
-  font-family: "Quicksand", sans-serif;
-  font-size: 180%;
-  font-weight: 400;
 }
 
 .section1 {
@@ -174,4 +178,15 @@ p {
 
 .section2 h1 {
   font-size: 5rem;
+}
+@keyframes glow {
+  0% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
 }
