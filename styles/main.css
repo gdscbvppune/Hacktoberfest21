@@ -37,7 +37,6 @@ nav {
   color: #fff;
   font-weight: 900;
 }
-
 ul {
   display: flex;
   flex-direction: row;
@@ -48,6 +47,21 @@ a {
   text-decoration: none;
   color: #444;
   font-weight: bold;
+
+}
+.heading {
+  /*change1*/
+  font-size: 5rem;
+  font-weight: 300;
+  color: #444;
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: bolder;
+  padding: 5% 0 0 0;
 }
 
 h1 {
