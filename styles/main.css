@@ -12,19 +12,21 @@ body {
 }
 
 nav {
-  background-color: #171717;
+  background-color: #eef2f5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 2%;
   height: 70px;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
   /* border: 1px solid #DCDBDB; */
 }
 .navtitle {
   font-size: 2rem;
   font-weight: bolder;
-  color: #eeeeee;
+  color: #343a40;
   outline: none;
   animation-name: glow;
   animation: glow 2s linear infinite;
@@ -34,7 +36,7 @@ nav {
   padding: 15px 15px;
   border: 0;
   margin: 0;
-  color: #eeeeee;
+  color: #393e46;
 }
 .nav-options:hover {
   background-color: #f44040;
@@ -55,17 +57,24 @@ a {
 
 .heading {
   /*change1*/
-  font-size: 5rem;
+  font-size: 4rem !important;
   font-weight: 300;
   color: #444;
   font-weight: 700;
+  padding-right: 15%;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
 }
 
 .sub-heading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #999;
   font-weight: bolder;
   padding: 5% 0 0 0;
+  margin-bottom: 10px;
+  border-bottom: 0;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
 }
 
 .font-size {
@@ -76,7 +85,9 @@ a {
   margin-top: 30px;
   color: #666;
   width: 80%;
-  padding: 0 100px 0 0;
+  padding: 0 240px 0 0;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
 }
 /* created a button with animations */
 .btn:link,
@@ -86,9 +97,12 @@ a {
   margin-top: 5%;
   padding: 15px 40px;
   border-radius: 2px;
+  margin-top: 0;
   display: inline-block;
   transition: all, 0.2s;
   position: relative;
+  animation-name: moveInRight;
+  animation: moveInRight 1s ease-out;
 }
 .btn:hover {
   font-weight: bold;
@@ -152,6 +166,8 @@ a {
 .part2 img {
   width: 100%;
   height: auto;
+  animation-name: moveInRight;
+  animation: moveInRight 1s ease-out;
 }
 
 .section2 {
@@ -179,14 +195,150 @@ a {
 .section2 h1 {
   font-size: 5rem;
 }
-@keyframes glow {
+
+#body-about-us {
+  background-image: url("../assets/images/about-img.jpg");
+  background-repeat: no-repeat;
+  height: 95vh;
+  position: relative;
+  background-size: cover;
+}
+.about-us {
+  padding: 5% 30% 5% 5%;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
+}
+.about-header {
+  font-weight: bolder;
+  font-size: 4rem;
+  margin-bottom: 25px;
+  color: #393e46;
+}
+.about-content {
+  font-size: 1.1rem;
+
+  padding-right: 35%;
+  color: #ffff;
+  animation-name: moveInRight;
+}
+@keyframes moveInLeft {
   0% {
-    color: #0e3742;
-    text-shadow: none;
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
   }
   100% {
-    color: #fff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    opacity: 1;
+    transform: translate(0);
   }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.products-heels,
+.products-shoes {
+  background-color: #f4f4f4;
+  margin-left: 13px;
+  padding-bottom: 15px;
+  border-bottom: solid white 20px;
+}
+
+.image-shoes {
+  display: inline-block;
+  width: 410px;
+  height: 500px;
+  padding: 10px 0 25px 2px;
+  border: 0;
+  border-right: soldi white 50px;
+  animation-name: moveInLeft;
+  animation: moveInLeft 1s ease-out;
+}
+.our-collection {
+  background-color: #f6f5f5;
+  padding: 10px 10px;
+  border: 0;
+  margin: 13px;
+}
+.shoe-template {
+  display: inline-block;
+}
+.shoe-collection {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 10px 25px 2px;
+  margin: 0;
+  border-right: soldi white 50px;
+}
+.our-collection-head {
+  padding: 2px 25px;
+}
+
+.btnn:link,
+.btnn:visited {
+  background-color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 5%;
+  padding: 15px 40px;
+  border-radius: 2px;
+  margin-top: 0;
+  display: inline-block;
+  transition: all, 0.2s;
+  position: relative;
+}
+.btnn:hover {
+  font-weight: bold;
+  color: #2b2b2b;
+  background-color: #efefef;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  background-color: #dddddd;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer-info {
+  text-decoration: none;
+  padding: 0 5px;
+  color: #2b2b2b;
+}
+.footer-info:hover {
+  color: #ffff;
+}
+.tradeMark {
+  text-align: center;
+}
+.btns {
+  background-color: #2b2b2b;
+  color: #ffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 5%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 0;
+  display: inline-block;
+  transition: all, 0.2s;
+  position: relative;
+}
+.btns:hover {
+  font-weight: bold;
+  color: #2b2b2b;
+  background-color: #ffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
