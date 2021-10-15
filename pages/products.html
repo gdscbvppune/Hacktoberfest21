@@ -18,12 +18,17 @@
 
 
     <title>Products </title>
+    <style>
+        .nav-options{
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body class="body-products">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><strong>Lace iT </strong></a>
+             <navbrand class="navtitle">Lace iT &nbsp;</navbrand>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,13 +36,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Men</a>
+                        <a class="nav-options" aria-current="page" href="#men">Men</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Women</a>
+                        <a class="nav-options" href="#women">Women</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active">New Arrivals</a>
+                    <li class="nav-item" >
+                        <a class="nav-options" href="#newarrival">New Arrivals</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -47,21 +52,21 @@
             </div>
         </div>
     </nav>
-    <div class="products-heels">
+    <div class="products-heels" id="women">
         <img src="../assets/images/heel1.jpg" alt="heel1" class="image-shoes">
         <img src="../assets/images/heel3.jpg" alt="heel3" class="image-shoes">
         <img src="../assets/images/heel2.jpg" alt="heel2" class="image-shoes">
         <a href="#" class="btnn btn-white btn-animated ">Shop Women</a>
 
     </div>
-    <div class="products-shoes">
+    <div class="products-shoes" id="men">
         <img src="../assets/images/shoe6.jpg" alt="shoe6" class="image-shoes">
         <img src="../assets/images/shoe5.jpg" alt="shoe2" class="image-shoes">
         <img src="../assets/images/shoe2.jpg" alt="shoe5" class="image-shoes">
         <a href="#" class="btnn btn-white btn-animated ">Shop Men</a>
 
     </div>
-    <div class="our-collection">
+    <div class="our-collection" id="newarrival">
         <h2 class="our-collection-head"><strong>Our Collection</strong></h2>
         <div class="shoe-template">
             <img src="../assets/images/heel4.jpg" alt="shoe6" class="shoe-collection">
