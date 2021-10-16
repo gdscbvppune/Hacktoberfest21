@@ -60,7 +60,7 @@
     </style>
 </head>
 <body>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScErTIxIfY_bghooe1kuRI9WTyh05XXNHVsGzWdA0hLjg7yLA/formResponse">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScErTIxIfY_bghooe1kuRI9WTyh05XXNHVsGzWdA0hLjg7yLA/formResponse" target="hidden_iframe" onsubmit="submitted=true;" id="gform">
             <label for="form"><h1>CONTACT US</h1></label>
             <input name="entry.741345620" type="text" class="form-control" placeholder="Your Name" required>
              <input name="entry.1535862569" type="email" class="form-control" placeholder="Your Email" required>
@@ -68,6 +68,23 @@
              <input name="entry.1821762951" class="form-control" placeholder="IS IT A QUERY OR A REQUEST?(Q/R)" required> 
             <input name="submit" type="submit" class="form-control form-control-submit" value="send">
      </form>
+     
+
+     <iframe
+     name="hidden_iframe"
+     id="hidden_iframe"
+     style="display: none"
+     onload="if(submitted) {
+         submitFun()
+     }"
+ ></iframe>
+ <script>
+     
+function submitFun() {
+    alert("THANK YOU FOR YOUR RESPONSE! WE WILL GET BACK TO YOU SHORTLY")
+    document.getElementById("gform").reset();
+}
+ </script>
 </body>
 
 </html>
